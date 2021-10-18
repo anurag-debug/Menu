@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="false">
+
+        <shape android:shape="line"
+            >
+            <solid android:color="@android:color/white"/>
+
+            <stroke android:color="#D3D3D3"
+                android:width="8dp"
+                />
+        </shape>
+
+    </item>
+
+    <item android:state_checked="true">
+        <shape android:shape="line"
+            >
+            <solid android:color="@android:color/white"/>
+
+            <stroke android:color="#008300"
+                android:width="8dp"/>
+        </shape>
+
+    </item>
+<!--008300-->
+</selector>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditDish"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <ImageView
+
+            android:id="@+id/image2"
+            android:layout_width="150dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_image_24" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name of Dish"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description of Dish"
+        android:inputType="text"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchVeg"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:textOff="false"
+            android:textOn="true"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:checked="false"
+            android:scaleX=".8"
+            android:scaleY=".8"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:thumb="@drawable/thumb"
+            app:track="@drawable/track"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VEG ONLY"
+            android:textSize="12dp"
+            android:textColor="#01001a"
+            android:fontFamily="@font/zeppelin"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Price"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/discountPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Discount in Price"
+        android:inputType="number"
+        tools:ignore="TouchTargetSizeCheck" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchRecommended"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textOff="false"
+            android:textOn="true"
+            android:checked="false"
+            android:scaleX=".8"
+            android:scaleY=".8"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:thumb="@drawable/thumb2"
+            app:track="@drawable/track2"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended"
+        android:textSize="12dp"
+        android:textColor="#01001a"
+        android:fontFamily="@font/zeppelin"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switchNewDish"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_vertical"
+            android:textOff="false"
+            android:textOn="true"
+            android:checked="false"
+            android:scaleX=".8"
+            android:scaleY=".8"
+
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:thumb="@drawable/thumb3"
+            app:track="@drawable/track3"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Dish"
+            android:textSize="12dp"
+            android:textColor="#01001a"
+            android:fontFamily="@font/zeppelin"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+<Button
+    android:id="@+id/finish"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Finish"/>
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content" />
+</LinearLayout>

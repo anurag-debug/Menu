@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity2"
+    android:orientation="vertical">
+    <EditText
+        android:id="@+id/nameOfOwner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Name of Owner of Restaurent"
+        android:inputType="textCapWords"
+        android:layout_gravity="center"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:maxLength="10"
+
+        android:ems="10"
+        android:hint="Mob. Number"
+        android:inputType="phone"
+        android:layout_gravity="center"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/nameOfRestaurent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Name of Restaurent"
+        android:inputType="textCapWords"
+        android:layout_gravity="center"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:ems="10"
+        android:hint="Email"
+
+        android:inputType="textEmailAddress"
+        android:layout_gravity="center"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+
+        tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+
+            android:text="Already have an account? Sign in here"
+            />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+
+            android:text="Sign Up"
+            />
+
+
+
+</LinearLayout>

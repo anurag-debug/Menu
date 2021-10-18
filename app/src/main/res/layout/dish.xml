@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="120dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:gravity="center_vertical"
+        android:layout_weight="1.5"
+        android:padding="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <ImageView
+android:id="@+id/vegLogo"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/checked"
+                android:visibility="invisible"
+
+                />
+
+                <ImageView
+                    android:id="@+id/nonvegLogo"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:src="@drawable/checkednonveg"
+                    android:visibility="invisible"
+
+                    />
+            </RelativeLayout>
+        <TextView
+            android:id="@+id/recommended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#RECOMMENDED"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/zeppelin"
+android:visibility="invisible"
+            android:textColor="#E32636"
+            android:textSize="12sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/newLaunch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#NEW LAUNCH"
+                android:layout_marginStart="21dp"
+                android:fontFamily="@font/zeppelin"
+android:visibility="invisible"
+                android:textColor="#FFCC00"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/dishName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="2.5dp"
+            android:fontFamily="@font/zeppelin"
+            android:inputType="textCapWords"
+            android:text="Dish Name"
+
+            android:textColor="#01001a"
+            android:textSize="18dp"
+            tools:ignore="TouchTargetSizeCheck" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:text="\u20B9"
+    android:fontFamily="@font/zeppelin"
+
+    android:textSize="13sp"
+    android:textColor="#E32636" />
+            <TextView
+
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/strike"
+                android:fontFamily="@font/zeppelin"
+                android:text=" Price"
+                android:textSize="13sp"
+                android:textColor="#E32636" />
+<TextView
+    android:id="@+id/discount"
+   android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="3dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="3dp"
+    android:fontFamily="@font/zeppelin"
+android:textSize="13sp"
+    android:textColor="#E32636"/>
+
+        </LinearLayout>
+
+        <com.borjabravo.readmoretextview.ReadMoreTextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+android:textColor="#BEBEBE"
+            android:text="I tend to shy away from restaurant chains, but wherever I go, PF Chang&apos;s has solidly good food and, like Starbucks, they&apos;re reliable. We were staying in Boston for a week and after a long day and blah blah blah blah... "
+            app:colorClickableText="#808080"
+
+            app:trimCollapsedText="More"
+android:fontFamily="@font/zeppelin"
+            app:trimExpandedText="Less"
+            app:trimLength="50"
+            app:trimMode="trimModeLength"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+</LinearLayout>
+    <LinearLayout
+
+        android:layout_width="150dp"
+        android:layout_height="130dp"
+        android:background="@drawable/layout_bg"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_launcher_background"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            app:shapeAppearanceOverlay="@style/roundimg"/>
+
+    </LinearLayout>
+</LinearLayout>
